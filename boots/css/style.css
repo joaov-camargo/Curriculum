@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px dashed red; */
+}
+
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: -1;
+}
+
+main {
+    margin-top: 50px;
+}
+.content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 5px;
+    /* border: 1px dashed red; */
+}
+
+.profile {
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1F1FC;
+}
+
+.profile > .photo, .main-content {
+    background: #F1F1FC;
+}
+
+.profile, .main-content {
+    border-radius: 3px;
+}
+
+.photo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo span {
+    width: 100%;
+    margin: 1px;
+    border-left: 1px solid red;
+    padding: 10px;
+}
+
+.photo, .skills {
+    padding: 15px;
+}
+
+img.photo {
+    width: 150px;
+    margin: auto;
+}
+
+.skills {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ebe6e6;
+}
+
+.box-skills {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skill-body {
+    width: 100%;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.skill {
+    /* margin-top: 3px; */
+    height: 20px;
+    border-radius: 8px;
+}
+
+.skill-html {width: 89%;background: rgb(245, 145, 15);}
+.skill-css {width: 76%;background: rgb(77, 118, 179);}
+.skill-js {width: 23%;background: orange;}
+.skill-git {width: 90%;background: rgb(61, 60, 57);}
+.skill-php {width: 30%;background: rgb(88, 64, 226);}
+.skill-nodejs {width: 21%;background: rgb(78, 206, 88);}
+
+
+.main-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.box-contentMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content .description {
+    border-left: 1px solid red;
+    margin-top: 50px;
+    padding: 12px;
+}
+
+.projects {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    width: 500px;
+    padding: 15px;
+    border-left: 1px dashed red;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
